@@ -5,9 +5,8 @@
 }
 
 body{
-    background-color: lightblue;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("bg1.jpg");
 }
-
 a{
     text-decoration: none;
 }
@@ -37,7 +36,7 @@ a{
 #nav{
     width: 250px;
     float: left;
-    background-color: #4dd2ff;
+    background-color: #c0f5bc;
 }
 
 #nav ul{
@@ -83,10 +82,12 @@ a{
 #main h1{
     padding: 10px;
     font-size: auto;
+    color: whitesmoke;
 }
 
 #main h4{
     padding: 5px;
+    color: whitesmoke;
 }
 
 #main table#t01{

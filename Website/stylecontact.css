@@ -83,38 +83,46 @@ a{
     margin: 10% 15%;
     position: absolute;
 }
-
-#main h1{
-    font-family: serif;
-    text-align: center;
+.column{
+    padding: 20px;
+    margin-left: 8%;
+}
+.card {
+    float: left;
+    width: 30%;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.85);
+}
+.contain h2{
     color: whitesmoke;
-    font-size: 70px;
-    text-shadow: 3px 3px black;
-}
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 1.2px 1.2px black;
 
-#main a{
-    border: 1px solid white;
-    padding: 10px 25px;
+}
+.contain p{
+    color: #EA5E3D;
+}
+.linked a{
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: 14px;
-    margin-top: 20px;
-    display: inline-block;
-    background-color: whitesmoke;
     color: rgb(4, 119, 10);
-    font-family: monospace;
+    padding: 5px 5px;
+    border: 1px black;
     transition: .6s ease;
+    display: inline-block;
 }
-
-#main a:hover{
+.linked a:hover{
     background-color: rgb(4, 119, 10);
     color: whitesmoke;
-    padding: 10px 25px;
+    padding: 6px;
+}
+.contain p.title {
+    color: grey;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif; 
 }
 #footer{
     clear: both;
     padding: 8px;
-    background-color: grey;
+    background-color: rgb(83, 83, 83);
     color: whitesmoke;
     text-align: right;
     position: fixed;
