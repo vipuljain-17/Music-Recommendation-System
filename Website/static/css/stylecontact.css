@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica,Arial,sans-serif;
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("img/bg1.jpg");
+    background-size: fixed;
+}
+
+a{
+    text-decoration: none;
+}
+
+#header h1{
+    margin: left;
+}
+#container{
+    width: 1400px;
+    background-color: #CCCCCC;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header{
+    width: 99%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    position: relative;
+}
+
+#content{
+    padding: 15px;
+}
+
+#nav{
+    width: 250px;
+    float: left;
+    background-color: #c0f5bc;
+}
+
+#nav ul{
+    float: left;
+    list-style-type: none;
+    margin-top: 100px;
+}
+
+#nav ul li{
+    display: table-row;
+    font-size: x-large;
+    margin: 50px;
+    width: 200px;
+}
+
+#nav ul li a{
+    text-decoration: none;
+    color: rgb(4, 119, 10);
+    padding: 10px 8px;
+    border: 1px solid transparent;
+    transition: .6s ease;
+    width: 200px;
+    display: block;
+}
+
+#nav ul li.active a{
+    padding: 5px;
+    background-color: #f2f2f2;
+    color: black;
+}
+
+#nav ul li a:hover{
+    background-color: rgb(4, 119, 10);
+    color: whitesmoke;
+    padding: 5px;
+}
+
+#main{
+    width: 1120px;
+    height: auto;
+    float: right;
+    text-align: center;
+    margin: 10% 15%;
+    position: absolute;
+}
+.column{
+    padding: 20px;
+    margin-left: 8%;
+}
+.card {
+    float: left;
+    width: 30%;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.85);
+}
+.contain h2{
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 1.2px 1.2px black;
+
+}
+.contain p{
+    color: #EA5E3D;
+}
+.linked a{
+    text-decoration: none;
+    color: rgb(4, 119, 10);
+    padding: 5px 5px;
+    border: 1px black;
+    transition: .6s ease;
+    display: inline-block;
+}
+.linked a:hover{
+    background-color: rgb(4, 119, 10);
+    color: whitesmoke;
+    padding: 6px;
+}
+.contain p.title {
+    color: grey;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif; 
+}
+#footer{
+    clear: both;
+    padding: 8px;
+    background-color: rgb(83, 83, 83);
+    color: whitesmoke;
+    text-align: right;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 99%;
+}

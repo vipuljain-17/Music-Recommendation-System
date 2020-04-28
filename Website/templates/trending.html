@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Music4U</title>
+        <link rel="stylesheet" type="text/css" href="../static/css/styletrend.css">
+    </head>
+
+    <body>
+        <div id="container">
+            <div id='header'>
+                <h1>Music4U</h1>
+            </div>
+            
+            <div id='content'>
+                <div id='nav'>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li class="active"><a href="#">Trending</a></li>                   
+                        <li><a href="recommendations">Music for you</a></li>
+                        <li><a href="about">About</a></li>
+                        <li><a href="contactus">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div id="main">
+                    <h1>Trending Music you should try</h1>
+                    <h4>English</h4>
+
+                    <table id="t01">
+                        <tr>
+                            <th>Title</th>
+                            <th>Artist</th>
+                            <th>listen_count</th>
+                        </tr>
+                        {%for i in range(0, 7)%} 
+                        <tr>
+                            <td><a href="https://www.youtube.com/results?search_query={{trending_dict['title'][i]}}">{{trending_dict["title"][i]}}</a></td>
+                            <td>{{trending_dict["artist_name"][i]}}</td>
+                            <td>{{trending_dict["listen_count"][i]}}</td>
+                        </tr>
+                        {%endfor%}
+                      </table>
+                </div>
+            </div>
+
+            <div id='footer'>
+                Copyright &copy; 2020 vadaPAV Inc.
+            </div>
+        </div>
+    </body>

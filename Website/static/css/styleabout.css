@@ -6,6 +6,7 @@
 
 body{
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("img/bg1.jpg");
+    background-size: fixed;
 }
 
 a{
@@ -79,50 +80,54 @@ a{
     width: 1120px;
     height: auto;
     float: right;
-    text-align: center;
-    margin: 10% 15%;
+    text-align: left;
+    margin: 1% 15%;
     position: absolute;
 }
-.column{
-    padding: 20px;
-    margin-left: 8%;
-}
-.card {
-    float: left;
-    width: 30%;
-    padding: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.85);
-}
-.contain h2{
-    color: whitesmoke;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-shadow: 1.2px 1.2px black;
 
-}
-.contain p{
-    color: #EA5E3D;
-}
-.linked a{
-    text-decoration: none;
-    color: rgb(4, 119, 10);
-    padding: 5px 5px;
-    border: 1px black;
-    transition: .6s ease;
-    display: inline-block;
-}
-.linked a:hover{
-    background-color: rgb(4, 119, 10);
+#main h2{
+    text-align: center;
     color: whitesmoke;
-    padding: 6px;
+    text-shadow: 1px 1px orangered;
+    font-size: xx-large;
 }
-.contain p.title {
-    color: grey;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif; 
+
+#main ul{
+    padding-top: 3%;
+}
+
+#main ul li{
+    color: red;
+}
+
+#main ul li p{
+    text-align: left;
+    color: orangered;
+    font-size: x-large;
+}
+
+#main p{
+    padding-top: 2%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: orange;
+    font-size: x-large;
+}
+#main h4{
+    padding-top: 4%;
+    color: whitesmoke;
+    font-family: monospace;
+    font-size: larger;
+}
+
+#main h4 a{
+    text-decoration: none;
+    color: teal;
+    font-size: x-large;
 }
 #footer{
     clear: both;
     padding: 8px;
-    background-color: rgb(83, 83, 83);
+    background-color: grey;
     color: whitesmoke;
     text-align: right;
     position: fixed;

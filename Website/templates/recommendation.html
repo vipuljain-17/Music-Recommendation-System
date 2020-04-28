@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Music4U</title>
+        <link rel="stylesheet" type="text/css" href="../static/css/stylerecommendation.css">
+    </head>
+
+    <body>
+        <div id="container">
+            <div id='header'>
+                <h1>Music4U</h1>
+            </div>
+            <div id='content'>
+                <div id='nav'>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="trending">Trending</a></li>                   
+                        <li class="active"><a href="#">Music for you</a></li>
+                        <li><a href="about">About</a></li>
+                        <li><a href="contactus">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div id="main">
+                    <h4>Search for songs related to..</h4>
+                    <div class="container container-padding50">
+                        <input type="text" class="js-userinput container-textinput" />
+                        <button class="js-go container-button">Go!</button>
+                    </div>
+                    <div class = "Topic">
+                        <h2>Showing results similar to U Smile - Justin Bieber</h2>
+                    </div>
+
+                    <table id="t01">
+                        <tr>
+                            <th>Rank</th>
+                            <th>Title-Artist</th>
+                        </tr>
+                        {%for i in range(0, 7)%} 
+                        <tr>
+                            <td>{{ i + 1 }}</td>
+                            <td><a href="https://www.youtube.com/results?search_query={{result['song'][i]}}">{{result['song'][i]}}</a></td>
+                        </tr>
+                        {%endfor%}
+                      </table>
+                </div>
+                <div id='footer'>
+                    Copyright &copy; 2020 vadaPAV Inc.
+                </div>
+            </div>
+        </div>
+    </body>
+

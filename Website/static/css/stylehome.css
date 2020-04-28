@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica,Arial,sans-serif;
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("img/bg1.jpg");
+    background-size: fixed;
+}
+
+a{
+    text-decoration: none;
+}
+
+#header h1{
+    margin: left;
+}
+#container{
+    width: 1400px;
+    background-color: #CCCCCC;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header{
+    width: 99%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    position: relative;
+}
+
+#content{
+    padding: 15px;
+}
+
+#nav{
+    width: 250px;
+    float: left;
+    background-color: #c0f5bc;
+}
+
+#nav ul{
+    float: left;
+    list-style-type: none;
+    margin-top: 100px;
+}
+
+#nav ul li{
+    display: table-row;
+    font-size: x-large;
+    margin: 50px;
+    width: 200px;
+}
+
+#nav ul li a{
+    text-decoration: none;
+    color: rgb(4, 119, 10);
+    padding: 10px 8px;
+    border: 1px solid transparent;
+    transition: .6s ease;
+    width: 200px;
+    display: block;
+}
+
+#nav ul li.active a{
+    padding: 5px;
+    background-color: #f2f2f2;
+    color: black;
+}
+
+#nav ul li a:hover{
+    background-color: rgb(4, 119, 10);
+    color: whitesmoke;
+    padding: 5px;
+}
+
+#main{
+    width: 1120px;
+    height: auto;
+    float: right;
+    text-align: center;
+    margin: 10% 15%;
+    position: absolute;
+}
+
+#main h1{
+    font-family: serif;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 70px;
+    text-shadow: 3px 3px black;
+}
+
+#main a{
+    border: 1px solid white;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+    background-color: whitesmoke;
+    color: rgb(4, 119, 10);
+    font-family: monospace;
+    transition: .6s ease;
+}
+
+#main a:hover{
+    background-color: rgb(4, 119, 10);
+    color: whitesmoke;
+    padding: 10px 25px;
+}
+#footer{
+    clear: both;
+    padding: 8px;
+    background-color: grey;
+    color: whitesmoke;
+    text-align: right;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 99%;
+}

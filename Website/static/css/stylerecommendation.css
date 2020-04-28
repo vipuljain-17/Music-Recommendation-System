@@ -6,6 +6,7 @@
 
 body{
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("img/bg1.jpg");
+    background-size: fixed;
 }
 
 a{
@@ -79,38 +80,91 @@ a{
     width: 1120px;
     height: auto;
     float: right;
-    text-align: center;
-    margin: 10% 15%;
+    margin: 2% 15%;
     position: absolute;
 }
 
-#main h1{
-    font-family: serif;
-    text-align: center;
+#main h2{
     color: whitesmoke;
-    font-size: 70px;
-    text-shadow: 3px 3px black;
+    text-shadow: .5px .5px greenyellow;
 }
 
-#main a{
-    border: 1px solid white;
-    padding: 10px 25px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 14px;
-    margin-top: 20px;
-    display: inline-block;
-    background-color: whitesmoke;
+#main h4{
+    color: whitesmoke;
+    text-shadow: .5px .5px greenyellow;
+}
+.container-padding50 {
+	padding-top: 1px;
+}
+
+.container-textinput {
+	width: 60%;
+	display: inline-block;
+	padding: 15px;
+	font-size: 16px;
+	font-family: Helvetica, sans-serif;
+}
+
+.container-button {
+	width: 10%;
+	display: inline-block;
+	padding: 15px;
+	background-color: green;
+	color: white;
+	font-size: 16px;
+	font-family: Helvetica, sans-serif;
+
+	border: 1px solid green;
+	border-radius: 5px;
+}
+
+.container-image {
+	width: 30%;
+	display: block;
+	float: left;
+	margin-right:3%;
+}
+
+#main table#t01{
+    width: 100%;
+}
+
+table#t01 th {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+#main table#t01 tr{
+    text-align: center;
+    padding: 10px;
+}
+
+#main table#t01 tr:nth-child(even) {
+    background-color: #eee;
+    
+}
+
+#main table#t01 tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+#main table#t01 tr td a{
+text-decoration: none;
     color: rgb(4, 119, 10);
-    font-family: monospace;
+    padding: 10px 8px;
+    border: 1px solid transparent;
     transition: .6s ease;
+    width: 200px;
+    display: block;
 }
 
-#main a:hover{
+#main table#t01 tr td a:hover{
     background-color: rgb(4, 119, 10);
     color: whitesmoke;
-    padding: 10px 25px;
+    padding: 5px;
 }
+
 #footer{
     clear: both;
     padding: 8px;
