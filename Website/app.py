@@ -35,8 +35,18 @@ def trending():
 
 @app.route('/recommendations')
 def recommendation():
-   result = is_model.similar_items(['U Smile - Justin Bieber']).to_dict()
-   return render_template("recommendation.html",result = result)
+   return render_template("recommendation.html",result = None)
+
+@app.route("/recommendations",methods = ["POST"])
+def recommendation_result():
+   name = request.form["name"]
+   if name == None:
+      return render_template("recommendation.html",result = None,name = "No input value")
+   result = is_model.similar_items([name]).to_dict()
+   #result = is_model.similar_items(['U Smile - Justin Bieber']).to_dict()
+   return render_template("recommendation.html",result = result,name = name)
+   
+
 
 if __name__ == '__main__':
    app.run(debug = True)

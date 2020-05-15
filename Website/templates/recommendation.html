@@ -22,26 +22,30 @@
                 </div>
                 <div id="main">
                     <h4>Search for songs related to..</h4>
-                    <div class="container container-padding50">
-                        <input type="text" class="js-userinput container-textinput" />
-                        <button class="js-go container-button">Go!</button>
-                    </div>
-                    <div class = "Topic">
-                        <h2>Showing results similar to U Smile - Justin Bieber</h2>
-                    </div>
+                    <form action = "http://localhost:5000/recommendations" method = "POST" >
+                        <div class="container container-padding50">
+                            <input type="text" name = "name" class="js-userinput container-textinput" />
+                            <input type = "submit" value = "GO!" class="js-go container-button" />
+                        </div>
+                    </form>
+                    {% if result != None %}
+                        <div class = "Topic">
+                            <h2>Showing results similar to {{name}} </h2>
+                        </div>
 
-                    <table id="t01">
-                        <tr>
-                            <th>Rank</th>
-                            <th>Title-Artist</th>
-                        </tr>
-                        {%for i in range(0, 7)%} 
-                        <tr>
-                            <td>{{ i + 1 }}</td>
-                            <td><a href="https://www.youtube.com/results?search_query={{result['song'][i]}}">{{result['song'][i]}}</a></td>
-                        </tr>
-                        {%endfor%}
-                      </table>
+                        <table id="t01">
+                            <tr>
+                                <th>Rank</th>
+                                <th>Title-Artist</th>
+                            </tr>
+                            {%for i in range(0, 7)%} 
+                            <tr>
+                                <td>{{ i + 1 }}</td>
+                                <td><a href="https://www.youtube.com/results?search_query={{result['song'][i]}}">{{result['song'][i]}}</a></td>
+                            </tr>
+                            {%endfor%}
+                        </table>
+                    {% endif %}
                 </div>
                 <div id='footer'>
                     Copyright &copy; 2020 vadaPAV Inc.
